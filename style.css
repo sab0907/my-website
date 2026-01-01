@@ -1,35 +1,46 @@
-body {
-  background: linear-gradient(
-    -45deg,
-    #7f00ff,
-    #c77dff,
-    #ff5fad,
-    #ff0080
-  );
-  background-size: 400% 400%;
-  animation: gradientBG 12s ease infinite;
-
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  padding-top: 120px;
-  min-height: 100vh;
+html, body {
+  height: 100%;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+body {
+  background: linear-gradient(120deg, #a18cd1, #fbc2eb, #84fab0);
+  background-size: 300% 300%;
+  animation: bgMove 15s ease infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
 }
 
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glass card */
+.card {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 20px;
+  padding: 40px 50px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 400px;
+}
+
+/* Text */
 h1 {
-  font-size: 3rem;
-  text-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  margin: 0 0 10px;
+  font-size: 2.6rem;
+}
+
+p {
+  font-size: 1.1rem;
+  opacity: 0.85;
 }

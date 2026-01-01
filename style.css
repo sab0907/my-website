@@ -1,11 +1,7 @@
 body {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
   color: black;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
   padding-top: 120px;
-}
-
-h1 {
-  font-size: 3rem;
 }

@@ -1,7 +1,35 @@
 body {
-  background: linear-gradient(135deg, #7f00ff, #e100ff);
-  color: black;
+  background: linear-gradient(
+    -45deg,
+    #7f00ff,
+    #c77dff,
+    #ff5fad,
+    #ff0080
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+
+  color: white;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
   padding-top: 120px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.35);
 }

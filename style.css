@@ -61,7 +61,6 @@ button {
   border-radius: 30px;
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 

@@ -3,7 +3,6 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  cursor: none; /* hide default cursor */
 }
 
 body {

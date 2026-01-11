@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #222;
-  cursor: default; /* ensure cursor is visible */
+  cursor: default; /* cursor is visible */
 }
 
 @keyframes bgMove {
@@ -59,7 +59,7 @@ button {
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer; /* visible pointer */
+  cursor: pointer;
 }
 
 button:hover {

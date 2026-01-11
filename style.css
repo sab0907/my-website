@@ -1,7 +1,9 @@
+/* Full page setup */
 html, body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  cursor: none; /* hide default cursor */
 }
 
 body {
@@ -32,15 +34,52 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
   text-align: center;
   max-width: 400px;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
 }
 
 /* Text */
 h1 {
+  margin: 0 0 10px;
   font-size: 2.6rem;
 }
 
 p {
   font-size: 1.1rem;
+  opacity: 0.85;
 }
 
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Custom glowing cursor */
+.cursor {
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+}

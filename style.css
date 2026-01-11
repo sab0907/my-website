@@ -71,15 +71,4 @@ button:hover {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-/* Custom glowing cursor */
-.cursor {
-  position: fixed;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: white;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease;
-}
+

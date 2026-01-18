@@ -1,8 +1,6 @@
 const card = document.querySelector('.card');
 
-/* ======================
-   3D TILT EFFECT
-====================== */
+/* 3D tilt effect */
 card.addEventListener('mousemove', (e) => {
   const rect = card.getBoundingClientRect();
   const x = e.clientX - rect.left;
@@ -22,25 +20,18 @@ card.addEventListener('mousemove', (e) => {
   `;
 });
 
+/* Reset on mouse leave */
 card.addEventListener('mouseleave', () => {
   card.style.transform =
     'translateY(0px) scale(1) rotateX(0deg) rotateY(0deg)';
 });
 
-/* ======================
-   BUTTON ACTIONS
-====================== */
-const learnBtn = document.getElementById('learnBtn');
-const gameBtn = document.getElementById('gameBtn');
+/* Button navigation */
+document.getElementById('learnBtn').addEventListener('click', () => {
+  window.location.href = 'about.html';
+});
 
-if (learnBtn) {
-  learnBtn.addEventListener('click', () => {
-    window.location.href = 'about.html';
-  });
-}
+document.getElementById('gameBtn').addEventListener('click', () => {
+  alert('🎮 Game coming soon!');
+});
 
-if (gameBtn) {
-  gameBtn.addEventListener('click', () => {
-    alert('🎮 Game coming soon!');
-  });
-}

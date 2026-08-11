@@ -31,7 +31,4 @@ document.getElementById('learnBtn').addEventListener('click', () => {
   window.location.href = 'about.html';
 });
 
-document.getElementById('gameBtn').addEventListener('click', () => {
-  alert('🎮 Game coming soon!');
-});
 
